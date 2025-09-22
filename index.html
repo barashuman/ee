@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('https://i.pinimg.com/originals/03/13/7d/03137dde3c4be7547fb42209009cbf66.gif') no-repeat center center fixed;
+            background: url('https://i.pinimg.com/originals/ab/12/29/ab12297c17aea188fa41e7818706b961.gif') no-repeat center center fixed;
             background-size: cover;
             font-family: 'Courier New', Courier, monospace;
             color: #ff0000;
@@ -30,7 +30,7 @@
             margin-top: 20px;
             font-size: 1.5em;
             color: #ff0000; 
-            text-shadow: 0px 0px 8px #ff0000, 0px 0px 15px #ff0000, 0px 0px 25px #ff0000; 
+            text-shadow: none; /* إزالة التوهج */
             letter-spacing: 4.5px; 
             white-space: pre-wrap;
         }
@@ -38,20 +38,20 @@
             margin-top: 20px;
             font-size: 3em; 
             color: #ff1d1d; 
-            text-shadow: 0px 0px 8px #ff1212, 0px 0px 15px #fb1111, 0px 0px 25px #ff1111; 
+            text-shadow: none; /* إزالة التوهج */
             letter-spacing: 4.5px; 
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <img src="https://i.pinimg.com/originals/03/13/7d/03137dde3c4be7547fb42209009cbf66.gif" alt="Discord Image">
+        <img src="https://i.pinimg.com/originals/ab/12/29/ab12297c17aea188fa41e7818706b961.gif" alt="Discord Image">
     </div>
     <audio autoplay loop>
         <source src="aa.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-     <div class="text">قول لنطلة يجيي ياخذ تفلة</div>
+    <div class="text">قول لنطلة يجيي ياخذ تفلة</div>
     <div class="info" id="ip-info">
         <strong>IP: <span id="ip"></span></strong><br>
         <span><strong>City:</strong> <span id="city"></span></span><br>
@@ -64,7 +64,7 @@
     <div class="text">:NoCheatZone: https://discord.gg/dxe4nQ8DvH </div>
 
     <script>
-         fetch('https://ipinfo.io/json')
+        fetch('https://ipinfo.io/json')
         .then(response => response.json())
         .then(data => {
             delete data.readme;
